@@ -812,3 +812,250 @@ body {
         font-size: 1rem;
     }
 }
+
+/* =============================================
+   MAIN PORTFOLIO — RESPONSIVE BREAKPOINTS
+   ============================================= */
+
+/* ── Tablet (≤ 1024px) ── */
+@media (max-width: 1024px) {
+    #nav {
+        padding: 35px 30px;
+    }
+
+    #heading h1 {
+        font-size: 11vw;
+        margin-left: 30px;
+    }
+
+    #heading #second {
+        margin-left: 160px;
+    }
+
+    #about {
+        padding-left: 10vw;
+        gap: 60px;
+    }
+}
+
+/* ── Mobile (≤ 768px) ── */
+@media (max-width: 768px) {
+
+    /* Nav */
+    #nav {
+        padding: 24px 20px;
+        font-size: 16px;
+        position: relative;
+    }
+
+    #nav a {
+        font-size: 16px;
+    }
+
+    .menu-area {
+        gap: 16px;
+    }
+
+    #nav-links {
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        background-color: rgba(24, 15, 15, 0.97);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 20px 24px;
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 14px;
+        z-index: 1000;
+        min-width: 180px;
+        transform-origin: top right;
+    }
+
+    #nav-links a {
+        font-size: 16px;
+    }
+
+    /* Hero headings */
+    #heading {
+        margin-top: 20px;
+    }
+
+    #heading h1 {
+        font-size: 14vw;
+        margin-left: 16px;
+    }
+
+    #heading #second {
+        margin-left: 30px;
+    }
+
+    .blocktext h5 {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    #secheading {
+        margin-top: 8vh;
+        align-items: flex-start;
+        padding-left: 16px;
+    }
+
+    #secheading h5 {
+        padding: 0;
+        text-align: left;
+        font-size: 13px;
+    }
+
+    /* Hero footer */
+    #herofooter {
+        padding: 0 16px;
+    }
+
+    #herofooter a {
+        font-size: 13px;
+    }
+
+    /* Projects section */
+    #secondhero {
+        padding-top: 80px;
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+
+    .elem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 5vw 0;
+    }
+
+    .elem h1 {
+        font-size: 9vw;
+    }
+
+    .elem h5 {
+        font-size: 14px;
+    }
+
+    /* View work */
+    #viewwork {
+        padding: 50px 4vw;
+        margin-bottom: 60px;
+    }
+
+    /* Skills marquee */
+    #companies {
+        padding: 60px 0;
+    }
+
+    /* About */
+    #about {
+        flex-direction: column;
+        padding: 10vw 6vw;
+        padding-left: 6vw;
+        gap: 40px;
+        min-height: unset;
+        align-items: center;
+    }
+
+    .profile-img {
+        width: 220px;
+        height: 220px;
+    }
+
+    #textabout {
+        max-width: 100%;
+    }
+
+    #textabout p {
+        font-size: 16px;
+    }
+
+    /* Follow section */
+    #follow {
+        padding: 20px 24px;
+        padding-bottom: 10vw;
+        margin-top: -40px;
+    }
+
+    #follow a {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    #footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 36px 24px;
+        font-size: 16px;
+    }
+
+    #footerleft {
+        gap: 20px;
+    }
+
+    #footerleft p {
+        font-size: 16px;
+    }
+
+    #footerright {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #nav {
+        padding: 18px 16px;
+    }
+
+    #heading h1 {
+        font-size: 16vw;
+        margin-left: 12px;
+    }
+
+    #heading #second {
+        margin-left: 20px;
+    }
+
+    .blocktext h5 {
+        font-size: 12px;
+    }
+
+    #secheading h5 {
+        font-size: 11px;
+    }
+
+    #herofooter a {
+        font-size: 11px;
+    }
+
+    .elem h1 {
+        font-size: 11vw;
+    }
+
+    #about {
+        padding: 12vw 5vw;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    #footer {
+        padding: 28px 16px;
+    }
+
+    #footerright {
+        gap: 14px;
+    }
+
+    #follow {
+        padding: 16px;
+        padding-bottom: 12vw;
+    }
+}

@@ -21,20 +21,22 @@
 	<div id="minicircle"></div>
 
 	<main id="main">
-		<div id="hero">
-			<div id="nav">
-				<a href="index.html">Dhruv Narain Seth</a>
-				<div class="menu-area">
-					<div id="nav-links">
-						<a href="index.html">Home</a>
-						<a href="index.html#secondhero">Projects</a>
-						<a href="index.html#footer">Contact</a>
-					</div>
-
-					<div id="menu-btn">MENU+</div>
+		<div id="nav">
+			<a class="nav-brand" href="index.html">Dhruv Narain Seth</a>
+			<div class="menu-area">
+				<div id="nav-links">
+					<a class="nav-roll-link" href="index.html"><span>Home</span><span aria-hidden="true">Home</span></a>
+					<a class="nav-roll-link" href="index.html#about"><span>About</span><span aria-hidden="true">About</span></a>
+					<a class="nav-roll-link" href="index.html#contact"><span>Contact</span><span aria-hidden="true">Contact</span></a>
+					<a class="nav-roll-link active" href="Work.html"><span>Work</span><span aria-hidden="true">Work</span></a>
 				</div>
-			</div>
 
+				<button id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links">
+					MENU+
+				</button>
+			</div>
+		</div>
+		<div id="hero">
 			<div id="heading">
 				<div class="bounding">
 					<h1 class="boundel">VIEW ALL</h1>
@@ -46,6 +48,15 @@
 					<div class="bounding">
 						<h5 class="boundel">SELECTED PROJECTS &amp; BUILDS</h5>
 					</div>
+				</div>
+			</div>
+			<div class="work-hero-intro">
+				<p class="work-hero-kicker">SELECTED WORK / 2026</p>
+				<p class="work-hero-copy">A focused collection of interfaces, product concepts, and frontend experiments built to make digital ideas feel clear and useful.</p>
+				<div class="work-hero-meta" aria-label="Work summary">
+					<span>03 PROJECTS</span>
+					<span>FRONTEND / UI</span>
+					<span>DELHI, INDIA</span>
 				</div>
 			</div>
 			<div id="herofooter">

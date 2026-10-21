@@ -9,7 +9,6 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Oswald:wght@500&family=Poppins:wght@600&family=Roboto:wght@600&family=Orbitron:wght@600&family=Raleway:wght@600&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="loco.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -22,22 +21,23 @@
 
 <body>
     <div id="minicircle"></div>
-    <div id="main">
-        <div id="hero">
-            <div id="nav">
-                <a href="#">Dhruv Narain Seth</a>
-                <div class="menu-area">
-                    <div id="nav-links">
-                        <a href="#hero">Home</a>
-                        <a href="#secondhero">Projects</a>
-                        <a href="#about">About</a>
-                        <a href="#contact">Contact</a>
-                    </div>
-
-                    <div id="menu-btn">MENU+</div>
+    <div id="main" data-scroll-container>
+        <div id="nav">
+            <a class="nav-brand" href="#hero">Dhruv Narain Seth</a>
+            <div class="menu-area">
+                <div id="nav-links">
+                    <a class="nav-roll-link active" href="#hero"><span>Home</span><span aria-hidden="true">Home</span></a>
+                    <a class="nav-roll-link" href="#about"><span>About</span><span aria-hidden="true">About</span></a>
+                    <a class="nav-roll-link" href="#contact"><span>Contact</span><span aria-hidden="true">Contact</span></a>
+                    <a class="nav-roll-link" href="#secondhero"><span>Work</span><span aria-hidden="true">Work</span></a>
                 </div>
-            </div>
 
+                <button id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links">
+                    MENU+
+                </button>
+            </div>
+        </div>
+        <div id="hero" data-scroll-section>
             <div id="heading">
                 <div class="bounding">
                     <h1 class="boundel">FRONTEND</h1>
@@ -69,37 +69,46 @@
                 </div>
             </div>
         </div>
-        <div id="secondhero">
+        <div id="secondhero" data-scroll-section>
 
-            
+
             <div class="elem">
                 <img src="AppScribe.png" alt="">
-                <h1>APPSCRIBE</h1>
+                <div class="elem-copy">
+                    <h1>APPSCRIBE</h1>
+                    <p>AI-powered writing and note workflow concept with a clean, app-first interface.</p>
+                </div>
                 <h5>2026</h5>
             </div>
 
             <div class="elem">
                 <img src="ResumeIQ.png" alt="">
-                <h1>RESUMEIQ</h1>
+                <div class="elem-copy">
+                    <h1>RESUMEIQ</h1>
+                    <p>A resume analysis and job-matching interface designed to feel sharp and trustworthy.</p>
+                </div>
                 <h5>2026</h5>
             </div>
 
             <div class="elem elemlast">
                 <img src="ShopSphere.png" alt="">
-                <h1>SHOPSPHERE</h1>
+                <div class="elem-copy">
+                    <h1>SHOPSPHERE</h1>
+                    <p>A modern shopping concept with bold visuals and a premium ecommerce feel.</p>
+                </div>
                 <h5>2026</h5>
             </div>
 
         </div>
-        <div id="viewwork">
+        <div id="viewwork" data-scroll-section>
             <a href="Work.html">VIEW ALL WORK</a>
         </div>
 
-        <div id="companies">
+        <div id="companies" data-scroll-section>
             <div class="slider">
                 <div class="slide-track">
 
-                    
+
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
@@ -107,7 +116,7 @@
                     <i class="fa-brands fa-github github-icon"></i>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
 
-                    
+
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
@@ -131,7 +140,7 @@
                 </div>
             </div>
         </div>
-        <div id="about">
+        <div id="about" data-scroll-section>
             <div class="profile-img">
                 <img src="profile.jpg" alt="My Photo">
             </div>
@@ -148,30 +157,132 @@
                     My goal is to continuously learn, build impactful projects, and grow as a developer while
                     contributing to meaningful products.
                 </p>
-                <a href="mailto:sethdhruv927@gmail.com?subject=Contact from Portfolio&body=Hello Dhruv," target="_blank"
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=sethdhruv927@gmail.com&amp;su=Contact%20from%20Portfolio&amp;body=Hello%20Dhruv%2C"
                     class="talk-btn">Let's talk</a>
             </div>
         </div>
-        <div id="follow">
+        <div id="follow" data-scroll-section>
             <h5>OOPS,ALMOST FORGOT...</h5>
             <a href="https://leetcode.com/u/dns_18/" target="_blank">VISIT MY LEETCODE PROFILE <i
                     class="ri-arrow-right-up-line"></i></a>
         </div>
-        <div id="footer">
-            <div id="footerleft">
-                <h5>&copy; 2026</h5>
-                <p><span id="time"></span> IST</p>
+
+
+<section class="contact-section" id="contact">
+  <div class="contact-shell">
+
+    <div class="contact-topline" data-contact-reveal>
+      <span class="contact-status">
+        <span class="contact-status-dot"></span>
+        OPEN CHANNEL
+      </span>
+      <span class="contact-index">LET'S CONNECT / 01</span>
+    </div>
+
+    <div class="contact-main">
+      <div class="contact-copy">
+        <p class="contact-eyebrow" data-contact-reveal>
+          HAVE A PROJECT IN MIND?
+        </p>
+
+        <h2 class="contact-title" aria-label="Have a good idea? Let's make it real.">
+          <span class="contact-line">
+            <span class="contact-word" data-contact-reveal>
+              LET'S
+            </span>
+          </span>
+          <span class="contact-line contact-line-accent">
+            <span class="contact-word" data-contact-reveal>
+              TALK.
+            </span>
+          </span>
+        </h2>
+
+        <p class="contact-description" data-contact-reveal>
+          Tell me what you are building, what is not working, or where the idea needs to go next. I will get back to you with a direct, thoughtful reply.
+        </p>
+
+        <div class="contact-details" data-contact-reveal>
+          <a href="mailto:sethdhruv927@gmail.com">sethdhruv927@gmail.com</a>
+          <span>DELHI, INDIA</span>
+        </div>
+
+        <figure class="contact-image" data-contact-reveal>
+          <img src="contact.jpg" alt="Contact section visual" loading="lazy">
+          <figcaption>DESIGN / FRONTEND / PRODUCT THINKING</figcaption>
+        </figure>
+      </div>
+
+      <form class="contact-form" action="mailto:sethdhruv927@gmail.com" method="post" enctype="text/plain" data-contact-reveal>
+        <div class="contact-form-row">
+          <label>
+            FULL NAME
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            EMAIL ADDRESS
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+        </div>
+
+        <label>
+          SUBJECT
+          <input type="text" name="subject" placeholder="What are we making?" required>
+        </label>
+
+        <label>
+          MESSAGE
+          <textarea name="message" rows="6" placeholder="Tell me about your idea..." required></textarea>
+        </label>
+
+        <button class="contact-submit" type="submit">
+          <span>SEND MESSAGE</span>
+          <span aria-hidden="true">↗</span>
+        </button>
+        <p class="contact-form-note">Your message opens in your email app.</p>
+      </form>
+    </div>
+
+    <div class="contact-bottomline" data-contact-reveal>
+      <span>GOOD THINGS START WITH A HELLO.</span>
+
+      <div class="contact-socials">
+        <a href="https://www.linkedin.com/in/dhruv-seth18/"
+           target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a>
+        <a href="https://github.com/dns-18"
+           target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+        <!-- <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=sethdhruv927@gmail.com&amp;su=Project%20inquiry&amp;body=Hello%20Dhruv%2C" class="contact-email">
+            Get in touch ↗
+        </a> -->
+
+        <div class="portfolio-footer" data-scroll-section>
+            <div id="footer">
+                <div id="footerleft">
+                    <p><span id="time"></span> IST</p>
+                </div>
+                <div id="footerright">
+                    <a href="https://www.instagram.com/dhruv_.seth/" target="_blank">Instragram</a>
+                    <a href="https://www.linkedin.com/in/dhruv-seth18" target="_blank">Linkedin</a>
+                    <a href="https://github.com/dns-18" target="_blank">Github</a>
+                    <a href="https://leetcode.com/u/dns_18/" target="_blank">Leetcode</a>
+                </div>
             </div>
-            <div id="footerright">
-                <a href="https://www.instagram.com/dhruv_.seth/" target="_blank">Instragram</a><a href="https://www.linkedin.com/in/dhruv-seth18" target="_blank">Linkedin</a><a href="https://github.com/dns-18" target="_blank">Github</a><a
-                    href="https://leetcode.com/u/dns_18/" target="_blank">Leetcode</a>
+            <div class="contact-bottom">
+                <span>&copy; 2026 My Portfolio</span>
+                <a href="#hero" id="back-to-top">Back to top ↑</a>
             </div>
         </div>
+
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
         integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="script.js"></script>
 </body>
 
